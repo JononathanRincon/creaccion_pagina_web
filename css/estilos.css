@@ -1,0 +1,71 @@
+*{
+	padding: 0;
+	margin: 0;
+	
+}
+@font-face{
+
+	font-family:"chalet";
+	src:url("../font/chalet.eot");
+	src:url("../font/chalet.eot?#iefix") format("embeded-opentype"),
+		url("../font/chalet.woff")format("woff"),
+		url("../font/chalet.svg#chalet")format("svg"),
+		url("../font/chalet.ttf")format("ttf");/*tipo de letra*/
+	font-weight: normal; /*el grosor*/
+	font-style: normal;/*negriña, cursiva*/
+}
+body{
+	background: #212121;/*el color de la cuerpo de la pagina web*/
+	color: #ffffff;/*el color de la pagina*/
+	font-family: "chalet",helvetica,verdana;/*llama la fuente de la letra*/
+	font-size: 2em;/*el tamaño de la letra el em es igual px=pixeles*/
+	/*webadictos.com/2007/12/18/tabla-de-equivalencias-ente-px-em-pt-con-css*/
+}
+h1{
+	color:#F60; /*color de la fuente solamente a la h1*/
+	margin: 0.25em auto; /*margen auto significa que centre la margen*/
+	text-align:center;/*para alinear el titulo al centro */
+	-webkit-text-shadow: 5px 5px 10px rgba(255,255,255,0,5);/*sobra de la fuente *//*zafari google*/
+	-ms-text-shadow: 5px 5px 10px rgba(255,255,255,0,5);/**/
+	-o-text-shadow: 5px 5px 10px rgba(255,255,255,0,5);/*innet */
+	-moz-text-shadow: 5px 5px 10px rgba(255,255,255,0,5);
+	text-shadow: 5px 5px 10px rgba(255,255,255,0,5);
+}
+header,nav,footer
+{	background: #1E6381;
+ /**AZUL**/
+	border-radius: 0.5em;
+	margin: 0.5em auto;
+	max-width: 960px;
+	padding: 0.25em;
+	text-align: center;
+}
+section#contenedor
+{	margin: 0.5em auto; /*es el margen*/
+	max-width: 960px;/*para que sea centrado*/
+	padding: 0;
+ /*Lo ELIMINO cuando se termine el codigo abajo*/
+	text-align: center;
+}
+section#principal, aside
+{	background: #1E6381;
+ /**COLOR AZUL**/
+	border-radius: 0.5em;/*es la que da la rueda a la seccion*/
+	display: inline-block;/*me lo coloca por secciones aparte*/
+	margin: 0.2em auto;/*auto para que sea centrado*/
+	max-width: 960px;/*maximo de ancho*/
+	min-height: 200px;/*en un campo minimo aparezca 200 pixeles*/
+	vertical-align: top; /*me alinea todo en zona vertical, acercandoro a la parte de arriba */
+	width: 65%;/*ancho de la parte de abajo*/
+}
+article
+{	background: #011E30;
+ /*COLOR AZUL OSCURO*/
+	border-radius: 0.5em;
+	min-height: 140px;/*MINIMO DE ANCHO*/
+	padding: 0.25em;
+}
+aside
+{
+	width: 30%;
+}
